@@ -13,8 +13,8 @@ This project is an OpenAPI Specification Validator that checks for adherence to 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/openapi-validator.git
-   cd openapi-validator
+   git clone https://github.com/francomalatacca/fishbowl.git
+   cd fishbowl
    ```
 
 2. Create a virtual environment and activate it:
