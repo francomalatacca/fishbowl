@@ -1,0 +1,21 @@
+{
+  "querystring_format": {
+      "format": "camelCase"
+  },
+  "path_format": {
+      "format": "kebabCase"
+  },
+  "required_headers": {
+    "request_headers": {
+        "Authorization": "error"
+    },
+    "response_headers": {
+        "X-API-Request-Id": "warning",
+        "Deprecate": "info"
+    }
+},
+  "email_required": {
+      "required": true,
+      "level": "error"
+  }
+}

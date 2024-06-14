@@ -1,0 +1,69 @@
+<html><body><h1>Validation Report</h1>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href='#querystring_format'>querystring_format</a></li>
+<li><a href='#path_format'>path_format</a></li>
+<li><a href='#required_headers'>required_headers</a></li>
+<li><a href='#get_plural_noun'>get_plural_noun</a></li>
+<li><a href='#post_verb'>post_verb</a></li>
+<li><a href='#resource_version'>resource_version</a></li>
+<li><a href='#resource_lowercase'>resource_lowercase</a></li>
+<li><a href='#date_format'>date_format</a></li>
+<li><a href='#array_response_for_get'>array_response_for_get</a></li>
+</ul>
+<h2>Statistics</h2>
+<table border='1'>
+<tr><td>Summary</td><td></td></tr>
+<tr><td>Total Checks</td><td>9</td></tr>
+<tr><td>Successes</td><td>4</td></tr>
+<tr><td>Warnings</td><td>0</td></tr>
+<tr><td>Errors</td><td>5</td></tr>
+<tr><td>Infos</td><td>0</td></tr>
+<tr><td>Success Percentage</td><td>44.44%</td></tr>
+</table>
+<h2 id='querystring_format'>querystring_format</h2>
+<p>Path: paths</p>
+<p>Description: Exception in check_query_string_format: 'PathsUtils' object has no attribute 'is_camel_case'</p>
+<p>Details: Query parameter names must be in camelCase or kebab-case based on configuration.</p>
+<p><a href='https://example.com/docs/querystring_format'>Documentation</a></p>
+<h2 id='path_format'>path_format</h2>
+<p>Path: paths</p>
+<p>Description: All path segments are correctly formatted in kebab-case.</p>
+<p>Details: Path segments must be in kebab-case.</p>
+<p><a href='https://example.com/docs/path_format'>Documentation</a></p>
+<h2 id='required_headers'>required_headers</h2>
+<p>Path: paths</p>
+<p>Description: Request header 'Authorization' missing in request for path 'account'.</p>
+<p>Details: Certain headers must be present in request and response headers.</p>
+<p><a href='https://example.com/docs/required_headers'>Documentation</a></p>
+<h2 id='get_plural_noun'>get_plural_noun</h2>
+<p>Path: paths</p>
+<p>Description: Resource name 'account' in path 'account' must be a plural noun for GET method.</p>
+<p>Details: Resource names for GET methods must be plural nouns.</p>
+<p><a href='https://example.com/docs/get_plural_noun'>Documentation</a></p>
+<h2 id='post_verb'>post_verb</h2>
+<p>Path: paths</p>
+<p>Description: All resource names that are verbs use POST method.</p>
+<p>Details: Resource names that are verbs must use POST method.</p>
+<p><a href='https://example.com/docs/post_verb'>Documentation</a></p>
+<h2 id='resource_version'>resource_version</h2>
+<p>Path: paths</p>
+<p>Description: Path 'account' does not start with a valid version segment (e.g., 'v1').</p>
+<p>Details: Paths must start with a valid version segment (e.g., "v1").</p>
+<p><a href='https://example.com/docs/resource_version'>Documentation</a></p>
+<h2 id='resource_lowercase'>resource_lowercase</h2>
+<p>Path: paths</p>
+<p>Description: All resource names are lowercase.</p>
+<p>Details: Resource names must be lowercase.</p>
+<p><a href='https://example.com/docs/resource_lowercase'>Documentation</a></p>
+<h2 id='date_format'>date_format</h2>
+<p>Path: paths</p>
+<p>Description: Query parameter 'start_date' in path 'account' does not follow the YYYY-MM-DD format. | Query parameter 'end_date' in path 'account' does not follow the YYYY-MM-DD format.</p>
+<p>Details: Date fields must follow the YYYY-MM-DD format.</p>
+<p><a href='https://example.com/docs/date_format'>Documentation</a></p>
+<h2 id='array_response_for_get'>array_response_for_get</h2>
+<p>Path: paths</p>
+<p>Description: All appropriate GET paths return arrays.</p>
+<p>Details: GET methods without identifiers in the path must return an array.</p>
+<p><a href='https://example.com/docs/array_response_for_get'>Documentation</a></p>
+</body></html>

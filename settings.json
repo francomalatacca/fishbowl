@@ -1,0 +1,4 @@
+{
+  "default_spec_file": "openapi_spec.json",
+  "default_config_file": "config.json"
+}
